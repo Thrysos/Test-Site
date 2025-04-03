@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dio Grail</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0c1b;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            text-align: left;
+            max-width: 800px;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+        .diamond {
+            width: 10px;
+            height: 10px;
+            background: linear-gradient(45deg, #ccc, #666);
+            transform: rotate(45deg);
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 5px;
+        }
+        .subtitle {
+            font-size: 1em;
+            letter-spacing: 2px;
+        }
+        .author {
+            font-size: 0.9em;
+            color: cyan;
+            margin-top: 20px;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 102, 204, 0.7), rgba(0, 51, 102, 0.3));
+            filter: blur(100px);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="diamond"></div>
+            <h1>DIO GRAIL</h1>
+            <p class="subtitle">SPELL CARD ACTIVATION</p>
+            <p class="author">By Derick Chow</p>
+        </div>
+        <div class="background"></div>
+    </div>
+</body>
+</html>
