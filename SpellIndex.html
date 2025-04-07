@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dio Grail - Spell Card Activation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #050621;
+      font-family: 'Space Mono', monospace;
+      color: white;
+      overflow: hidden;
+    }
+
+    .container {
+      padding: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .left {
+      flex: 1;
+    }
+
+    .left h1 {
+      font-size: 64px;
+      margin: 10px 0;
+      letter-spacing: 5px;
+    }
+
+    .left p {
+      font-size: 14px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      gap: 16px;
+    }
+
+    .button-grid a {
+      border: 1px solid #00ffd5;
+      color: #00ffd5;
+      padding: 10px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .button-grid a:hover {
+      background-color: #00ffd5;
+      color: #050621;
+    }
+
+    .bar {
+      width: 50%;
+      height: 3px;
+      background-color: white;
+      margin: 40px 0;
+    }
+
+    .right {
+      flex: 1;
+      background: radial-gradient(circle at center, rgba(0, 255, 213, 0.3), rgba(0, 50, 100, 0.2), transparent);
+      height: 100vh;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      color: #00ffd5;
+      font-size: 12px;
+    }
+
+    .diamond {
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(45deg, #ccc, #555);
+      transform: rotate(45deg);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="diamond"></div>
+      <h1>DIO GRAIL</h1>
+      <p>SPELL CARD ACTIVATION</p>
+      <div class="bar"></div>
+      <div class="button-grid">
+        <a href="#">Learn Magic</a>
+        <a href="#">Whats a Spell Card</a>
+        <a href="#">Yokai Wiki</a>
+        <a href="#">Shrine Maiden Call</a>
+      </div>
+    </div>
+    <div class="right"></div>
+  </div>
+  <div class="footer">Derick Chow</div>
+</body>
+</html>
